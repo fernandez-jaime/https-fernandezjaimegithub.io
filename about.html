@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Jaime Fernandez</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">PORTFOLIO</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-icon" id="menu-icon">☰</div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="profile-section">
+      <div class="left">
+        <img src="profile.jpg" alt="Jaime Fernandez" class="profile">
+      </div>
+      <div class="right">
+        <h2 class="name">About <span>Me</span></h2>
+        <p class="subtitle">
+          I am a web developer passionate about creating clean and user friendly websites.
+          I enjoy learning new technologies and improving my coding skills
+          My goal is to make websites that not only look good but also function smoothly for everyone.
+          I believe collaboration and continuous learning are the keys to becoming a better developer.
+        </p>
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript (Basic)</li>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

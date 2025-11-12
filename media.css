@@ -1,195 +1,47 @@
-@media (max-width: 1024px) {
-  .container {
-    padding: 120px 40px;
-  }
 
-  .profile {
-    width: 250px;
-    height: 320px;
-  }
-
-  .name {
-    font-size: 56px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-  }
+@media (max-width: 1200px) {
+  .container { padding: 130px 50px; }
+  .profile { width: 280px; height: 380px; }
+  .name { font-size: 56px; }
+  .subtitle { font-size: 20px; }
 }
 
-@media (max-width: 900px) {
-  header {
-    padding: 20px 40px;
-  }
 
-  .logo {
-    font-size: 32px;
-  }
-
-  nav ul {
-    gap: 25px;
-  }
-
-  .profile-section {
-    gap: 60px;
-  }
-
-  .profile {
-    width: 220px;
-    height: 280px;
-  }
-
-  .name {
-    font-size: 50px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
+@media (max-width: 1024px) {
+  .container { padding: 120px 40px; }
+  .profile-section { flex-direction: column; gap: 40px; text-align: center; }
+  .profile { width: 240px; height: 320px; }
+  .name { font-size: 48px; }
+  .subtitle { font-size: 18px; }
 }
 
 
 @media (max-width: 700px) {
-  .container {
-    padding: 100px 30px;
-  }
-
-  .profile-section {
-    flex-direction: column;
-    text-align: center;
-    gap: 40px;
-  }
-
-  .right {
-    align-items: center;
-  }
-
-  .name {
-    font-size: 46px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .course {
-    font-size: 18px;
-  }
+  header { flex-direction: row; justify-content: space-between; padding: 15px 20px; }
+  .menu-icon { display: block; }
+  nav ul.nav-links { display: none; gap: 20px; }
+  .profile { width: 160px; height: 220px; }
+  .name { font-size: 36px; }
+  .subtitle { font-size: 14px; }
+  .skills li, .contact-info li { font-size: 14px; }
 }
+
+
 @media (max-width: 500px) {
-  header {
-    padding: 15px 25px;
-  }
-
-  .logo {
-    font-size: 28px;
-  }
-
-  nav ul {
-    gap: 20px;
-    font-size: 16px;
-  }
-
-  .profile {
-    width: 180px;
-    height: 240px;
-  }
-
-  .name {
-    font-size: 38px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .course {
-    font-size: 16px;
-  }
-}
-
-
-@media (max-width: 574px) and (min-width: 401px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px 0;
-    gap: 10px;
-  }
-
-  .logo {
-    font-size: 28px;
-    margin: 0;
-  }
-
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
-    gap: 25px;
-    font-size: 16px;
-  }
-
-  .menu-icon {
-    display: none;
-  }
-}
-
-
-@media (max-width: 400px) {
-  nav {
-    display: none; 
-  }
-
-  .menu-icon {
-    display: block; 
-    color: #000;
-    margin-right: 20px;
-  }
-
-  header {
-    justify-content: space-between;
-    padding: 15px 20px;
-  }
-
-  .logo {
-    font-size: 24px;
-  }
-
-  .profile {
-    width: 150px;
-    height: 200px;
-  }
-
-  .name {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
+  .container { padding: 80px 20px; }
+  .profile { width: 130px; height: 180px; }
+  .name { font-size: 28px; }
+  .subtitle { font-size: 12px; }
+  .course { font-size: 14px; }
 }
 
 
 @media (max-width: 320px) {
-  .logo {
-    font-size: 22px;
-  }
-
-  .menu-icon {
-    font-size: 28px;
-  }
-
-  .name {
-    font-size: 28px;
-  }
-
-  .subtitle {
-    font-size: 13px;
-  }
-
-  .profile {
-    width: 130px;
-    height: 170px;
-  }
+  .logo { font-size: 20px; }
+  .menu-icon { font-size: 28px; }
+  .profile { width: 120px; height: 160px; }
+  .name { font-size: 24px; }
+  .subtitle { font-size: 11px; }
+  .course { font-size: 12px; }
+  .skills li, .contact-info li { font-size: 11px; }
 }

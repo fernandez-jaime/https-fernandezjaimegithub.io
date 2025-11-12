@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaime Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Dancing+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="media.css" />
+  <title>Home | Jaime Portfolio</title>
+  <link rel="stylesheet" href="home.css" />
 </head>
 <body>
   <header>
     <h1 class="logo">PORTFOLIO</h1>
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">HOME</a></li>
+        <li><a href="home.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
-      <div class="menu-icon" id="menu-icon">☰</div>
     </nav>
+    <div class="menu-icon" id="menu-icon">☰</div>
   </header>
 
   <main class="container">
@@ -27,7 +25,6 @@
         <img src="profile.jpg" alt="Profile Photo" class="profile" />
         <p class="course">ITS-300 C</p>
       </div>
-
       <div class="right">
         <h2 class="name">Hi I'm <span>Jaime Fernandez</span></h2>
         <p class="subtitle">BS - Information Technology Student</p>
@@ -38,7 +35,7 @@
   <script>
     const menuIcon = document.getElementById('menu-icon');
     const navLinks = document.querySelector('.nav-links');
-    menuIcon.addEventListener('click', () => {
+    menuIcon.addEventListener('click', ()=>{
       navLinks.classList.toggle('active');
     });
   </script>

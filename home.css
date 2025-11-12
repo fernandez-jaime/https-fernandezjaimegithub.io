@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background: url("background.jpg") no-repeat center center/cover;
   font-family: "Poppins", sans-serif;
@@ -14,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 header {
   width: 100%;
@@ -65,7 +63,6 @@ nav ul.nav-links li a:hover {
   cursor: pointer;
 }
 
-
 .container {
   flex: 1;
   display: flex;
@@ -73,7 +70,6 @@ nav ul.nav-links li a:hover {
   align-items: center;
   padding: 150px 60px;
 }
-
 
 .profile-section {
   display: flex;
@@ -118,7 +114,7 @@ nav ul.nav-links li a:hover {
 
 .name {
   font-family: "Dancing Script", cursive;
-  font-size: 64px;
+  font-size: 64px; 
   font-weight: 700;
   color: #000;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
@@ -136,42 +132,50 @@ nav ul.nav-links li a:hover {
   font-style: italic;
 }
 
-
-.skills h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.skills ul, .contact-info {
-  list-style: none;
-  padding-left: 0;
-}
-
-.skills li, .contact-info li {
-  font-size: 16px;
-  margin-bottom: 6px;
-}
-
-.contact-info li a {
-  color: #005fa3;
-  text-decoration: none;
-}
-
-.contact-info li a:hover {
-  text-decoration: underline;
-}
-
-
 nav ul.nav-links.active {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 70px;
   right: 20px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 10px 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media(max-width:1024px){
+  .container{padding:120px 40px;}
+  .profile-section{flex-direction:column;gap:40px;text-align:center;}
+  .profile{width:240px;height:320px;}
+  .name{font-size:48px;}
+  .subtitle{font-size:18px;}
+}
+
+@media(max-width:700px){
+  header{flex-direction:row;justify-content:space-between;padding:15px 20px;}
+  .menu-icon{display:block;}
+  nav ul.nav-links{display:none;gap:20px;}
+  .profile{width:160px;height:220px;}
+  .name{font-size:36px;}
+  .subtitle{font-size:14px;}
+  .course{font-size:16px;}
+}
+
+@media(max-width:500px){
+  .container{padding:80px 20px;}
+  .profile{width:130px;height:180px;}
+  .name{font-size:28px;}
+  .subtitle{font-size:12px;}
+  .course{font-size:14px;}
+}
+
+@media(max-width:320px){
+  .logo{font-size:20px;}
+  .menu-icon{font-size:28px;}
+  .profile{width:120px;height:160px;}
+  .name{font-size:24px;}
+  .subtitle{font-size:11px;}
+  .course{font-size:12px;}
 }
